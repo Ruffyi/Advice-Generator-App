@@ -1,6 +1,7 @@
 .advice {
-	@include flex-mother(column, center, flex-start);
+	@include flex-mother(column, center, space-between);
 	position: relative;
+	min-height: 30rem;
 	width: clamp(35rem, 80%, 50rem);
 	border-radius: 1rem;
 	text-align: center;
@@ -51,6 +52,7 @@
 		padding: 1.5rem;
 		border-radius: 50%;
 		border: none;
+		cursor: pointer;
 		background-color: map-get($clr, 'clr-neon-green');
 	}
 }

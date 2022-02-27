@@ -1,4 +1,4 @@
-.advice__image::after, .advice__image::before {
+.advice__image::after, .advice__image::before, .spinner::after {
   content: '';
   display: block; }
 
@@ -26,8 +26,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   position: relative;
+  min-height: 30rem;
   width: clamp(35rem, 80%, 50rem);
   border-radius: 1rem;
   text-align: center;
@@ -80,4 +81,28 @@
     padding: 1.5rem;
     border-radius: 50%;
     border: none;
+    cursor: pointer;
     background-color: #52ffa8; }
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8rem;
+  height: 8rem;
+  transform: translate(-50%, -50%);
+  display: block; }
+  .spinner::after {
+    width: 6.4rem;
+    height: 6.4rem;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    border-color: #ffffff transparent;
+    animation: spinner 1.2s linear infinite; }
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }

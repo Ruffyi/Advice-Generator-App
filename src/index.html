@@ -21,11 +21,10 @@
 	<body>
 		<main class="root">
 			<section class="advice">
-				<h2 class="advice__title">Advice #117</h2>
-				<p class="advice__description">
-					"It is easy to sit up and take notice, what's difficult is getting up
-					and taking action."
-				</p>
+				<h2 class="advice__title">
+					Advice <span class="advice__id" data-id></span>
+				</h2>
+				<p class="advice__description" data-description></p>
 				<div class="advice__image">
 					<img
 						aria-hidden="true"
@@ -34,7 +33,7 @@
 						class="advice__decoration"
 					/>
 				</div>
-				<button class="advice__roll">
+				<button class="advice__roll" data-roll>
 					<img
 						class="dice"
 						src="./assets/images/icon-dice.svg"
@@ -42,6 +41,7 @@
 					/>
 				</button>
 			</section>
+			<div class="spinner" data-spinner></div>
 		</main>
 		<script src="./dist/app/app.js" defer></script>
 	</body>

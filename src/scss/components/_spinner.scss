@@ -1,0 +1,23 @@
+.spinner {
+	@include positioning(absolute, 50%, 50%);
+	@include dimension(8rem, 8rem);
+	transform: translate(-50%, -50%);
+	display: block;
+	&::after {
+		@extend %pseudo;
+		@include dimension(6.4rem, 6.4rem);
+		margin: 8px;
+		border-radius: 50%;
+		border: 6px solid map-get($clr, 'clr-white');
+		border-color: map-get($clr, 'clr-white') transparent;
+		animation: spinner 1.2s linear infinite;
+	}
+}
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
