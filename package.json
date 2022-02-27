@@ -1,0 +1,17 @@
+{
+	"name": "rp",
+	"version": "1.0.0",
+	"description": "![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^7.0.0",
+		"node-sass": "^7.0.1",
+		"typescript": "^4.5.5"
+	}
+}
