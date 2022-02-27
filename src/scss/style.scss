@@ -1,8 +1,6 @@
 @import './abstracts/variables';
+@import './abstracts/placeholders';
 @import './abstracts/mixins';
 @import './base/reset';
-
-
-body {
-	background-color: red;
-}
+@import './components/root';
+@import './components/advice';

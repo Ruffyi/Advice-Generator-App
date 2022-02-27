@@ -1,0 +1,46 @@
+.advice {
+	@include flex-mother(column, center, flex-start);
+	width: clamp(35rem, 80%, 50rem);
+	border-radius: 1rem;
+	text-align: center;
+	background-color: map-get($clr, 'clr-grayish-blue');
+	&__title {
+		color: map-get($clr, 'clr-neon-green');
+		text-transform: uppercase;
+		font-weight: 800;
+		letter-spacing: 5px;
+		margin: 3rem 0;
+	}
+	&__description {
+		font-size: 2.5rem;
+		width: 80%;
+		color: map-get($clr, 'clr-light-cyan');
+	}
+	&__decoration {
+		position: relative;
+		margin: 4rem 0;
+		width: 80%;
+		z-index: 1;
+	}
+	&__image {
+		position: relative;
+		width: 80%;
+
+		&::after {
+			@include positioning(absolute, 50%, 0);
+			@include dimension(100%, 2px);
+			@extend %pseudo;
+			transform: translateY(-50%);
+			background-color: map-get($clr, 'clr-dark-grayish-blue');
+		}
+		&::before {
+			@include positioning(absolute, 50%, 50%);
+			@include dimension(4rem, 4rem);
+			@extend %pseudo;
+			border-radius: 50%;
+			z-index: 1;
+			transform: translate(-50%, -50%);
+			background-color: map-get($clr, 'clr-grayish-blue');
+		}
+	}
+}

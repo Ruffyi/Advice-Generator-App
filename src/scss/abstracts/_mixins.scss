@@ -1,0 +1,17 @@
+@mixin flex-mother($dir: row, $alignItems: center, $justifyContent: center) {
+	display: flex;
+	flex-direction: $dir;
+	align-items: $alignItems;
+	justify-content: $justifyContent;
+}
+
+@mixin positioning($pos: absolute, $top: 0, $left: 0) {
+	position: $pos;
+	top: $top;
+	left: $left;
+}
+
+@mixin dimension($width: 0, $height: 0) {
+	width: $width;
+	height: $height;
+}

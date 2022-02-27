@@ -1,0 +1,13 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+:root {
+	box-sizing: border-box;
+	font-family: $ff-primary;
+	font-size: $fs-primary;
+}
