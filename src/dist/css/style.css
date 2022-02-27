@@ -27,6 +27,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
   width: clamp(35rem, 80%, 50rem);
   border-radius: 1rem;
   text-align: center;
@@ -43,7 +44,7 @@
     color: #cee3e9; }
   .advice__decoration {
     position: relative;
-    margin: 4rem 0;
+    margin: 5rem 0;
     width: 80%;
     z-index: 1; }
   .advice__image {
@@ -67,3 +68,16 @@
       z-index: 1;
       transform: translate(-50%, -50%);
       background-color: #4e5d73; }
+  .advice__roll {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #52ffa8; }
