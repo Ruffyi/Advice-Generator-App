@@ -23,7 +23,12 @@
 
 	const fetchAdviceData = async () => {
 		try {
-			const response = await fetch('https://api.adviceslip.com/advice');
+			const response = await fetch('https://api.adviceslip.com/advice', {
+				headers: {
+					'Content-Type': 'application/json',
+					'Cache-Control': 'no-cache',
+				},
+			});
 			const { slip } = await response.json();
 			spinner.style.display = 'none';
 			renderAdviceData(slip);
